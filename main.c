@@ -16,23 +16,23 @@ int main ()
   scanf("%d",&car1.carid);
   scanf("%s",car1.model);
   scanf("%d",&car1.rental);
-  getchar();
+  getchar(); //enetering new line character to break in the input buffer lag
   printf("Input car details for car1: ");
   printf("Enter carID: ");
   scanf("%d",&car2.carid);
   scanf("%s",car2.model);
   scanf("%d",&car2.rental);
-  getchar();
+  getchar(); 
   printf("Input car details for car1: ");
   printf("Enter carID: ");
   scanf("%d",&car3.carid);
   scanf("%s",car3.model);
   scanf("%d",&car3.rental);
   getchar();
-int rentaldays;
+int rentaldays; //declaring variable to set rentaldays car to be rented
   printf("\nEnter the number of rental days: ");
-  scanf("%d", &rentaldays);
-
+  scanf("%d", &rentaldays); //input number of days to be rented
+//printing total cost of car to be rented 
   printf("\nTotal Rental Cost for Car 1: %.2f\n", calculateRentalCost(car1, rentaldays));
   printf("Total Rental Cost for Car 2: %.2f\n", calculateRentalCost(car2, rentaldays));
   printf("Total Rental Cost for Car 3: %.2f\n", calculateRentalCost(car3, rentaldays));
