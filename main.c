@@ -9,6 +9,7 @@ float calculateRentalCost(struct car car, int days) {
   return car.rental * days;}
 int main ()
 {
+  //take 3 input for cars 
   struct car car1 , car2,car3;
   printf("Input car details for car1: ");
   printf("Enter carID: ");
